@@ -39,7 +39,7 @@ cacheSolve <- function(x, ...) {
   }
   message("Inverse not in memory, need to calculate")
   data <- x$get()
-  inverse <- inverse(data,..)
+  inverse <- solve(data,..)
   x$setinverse(invserse)
   inverse
 }
